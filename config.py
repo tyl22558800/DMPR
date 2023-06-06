@@ -55,9 +55,9 @@ def get_parser_for_training():
                         help="The location of dataset.")
     parser.add_argument('--optimizer_weights',
                         help="The weights of optimizer.")
-    parser.add_argument('--batch_size', type=int, default=8,
+    parser.add_argument('--batch_size', type=int, default=48,
                         help="Batch size.")
-    parser.add_argument('--data_loading_workers', type=int, default=0,
+    parser.add_argument('--data_loading_workers', type=int, default=16,
                         help="Number of workers for data loading.")
     parser.add_argument('--num_epochs', type=int, default=100 ,
                         help="Number of epochs to train for.")
